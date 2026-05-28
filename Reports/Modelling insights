@@ -1,0 +1,377 @@
+# Statistical Modeling & Marketing Mix Modeling (MMM) – Business Insights Report
+
+# Project
+
+Marketing Effectiveness & Retail Sales Analytics for FMCG Business
+
+---
+
+# 1. Overall Model Performance
+
+## Observation
+
+The regression model achieved an R² value of approximately 0.33.
+
+## Business Insight
+
+The selected business variables explain nearly one-third of total sales variation, indicating that promotions, transactions, seasonality, and historical sales trends meaningfully influence consumer demand.
+
+## Interpretation
+
+Retail and FMCG sales are naturally influenced by many external and unpredictable factors such as:
+
+* consumer behavior,
+* economic conditions,
+* competitor actions,
+* weather,
+* and seasonal demand fluctuations.
+
+Therefore, moderate R² values are common in retail analytics and marketing effectiveness studies.
+
+## Recommendation
+
+Future model performance may improve by including:
+
+* pricing variables,
+* competitor promotions,
+* advertising spend,
+* weather variables,
+* and macroeconomic indicators.
+
+---
+
+# 2. Promotion Effectiveness Analysis
+
+## Observation
+
+The promotion-related variables show strong positive coefficients.
+
+### Key Results
+
+* promo_flag coefficient ≈ +486
+* onpromotion coefficient ≈ +22
+
+## Business Insight
+
+Promotional activity significantly increases product sales.
+
+## Interpretation
+
+* Products under promotion generate approximately 486 additional sales units on average.
+* Increasing the number of promoted products also positively impacts revenue generation.
+
+## Strategic Implication
+
+Promotions are one of the strongest short-term sales drivers within the business.
+
+## Recommendation
+
+* Continue targeted promotional campaigns.
+* Prioritize promotions for high-performing product categories.
+* Optimize promotion timing during seasonal demand spikes.
+* Evaluate promotional profitability to avoid excessive discount dependency.
+
+---
+
+# 3. Historical Sales Impact
+
+## Observation
+
+The rolling 7-day sales feature has a strong positive coefficient.
+
+### Key Result
+
+* rolling_sales_7 coefficient ≈ +0.94
+
+## Business Insight
+
+Recent historical sales strongly influence current sales performance.
+
+## Interpretation
+
+Consumer demand demonstrates short-term momentum and persistence.
+
+## Strategic Implication
+
+Products and stores performing well recently are likely to continue performing strongly in the near future.
+
+## Recommendation
+
+* Use rolling sales trends for inventory planning.
+* Use recent demand behavior for forecasting future promotions and stock allocation.
+
+---
+
+# 4. Lag Sales Analysis
+
+## Observation
+
+The lag_sales_1 feature shows a slight negative relationship with current sales.
+
+### Key Result
+
+* lag_sales_1 coefficient ≈ -0.10
+
+## Business Insight
+
+Exceptionally high sales on one day may be followed by mild demand normalization on the next day.
+
+## Interpretation
+
+Consumers may temporarily reduce purchases after unusually strong buying periods.
+
+## Recommendation
+
+* Monitor post-promotion demand drops.
+* Evaluate whether promotions create temporary demand spikes rather than sustainable growth.
+
+---
+
+# 5. Customer Transactions Analysis
+
+## Observation
+
+Store transaction volume positively affects sales.
+
+### Key Result
+
+* transactions coefficient ≈ +0.017
+
+## Business Insight
+
+Higher customer footfall contributes positively to sales generation.
+
+## Interpretation
+
+Stores with more customer visits generally produce stronger sales performance.
+
+## Strategic Implication
+
+Improving store traffic can positively impact revenue growth.
+
+## Recommendation
+
+* Increase local marketing initiatives.
+* Improve customer acquisition campaigns.
+* Optimize store-level promotional visibility.
+
+---
+
+# 6. Holiday Impact Analysis
+
+## Observation
+
+Holiday-related variables show a negative coefficient in the current model.
+
+### Key Result
+
+* holiday_flag coefficient ≈ -418
+
+## Business Insight
+
+Certain holidays may reduce average sales performance.
+
+## Interpretation
+
+Possible reasons include:
+
+* store closures,
+* reduced operating hours,
+* lower customer activity during specific holidays.
+
+## Important Note
+
+Not all holidays behave similarly. Some holidays increase demand while others reduce retail activity.
+
+## Recommendation
+
+* Separate holidays into categories:
+
+  * high-demand holidays,
+  * low-demand holidays,
+  * operational closure periods.
+* Build more granular holiday segmentation in future models.
+
+---
+
+# 7. Seasonality Analysis
+
+## Observation
+
+The month feature shows a mild positive relationship with sales.
+
+## Business Insight
+
+Sales exhibit seasonal demand behavior across the year.
+
+## Interpretation
+
+Consumer purchasing patterns vary by month due to:
+
+* festivals,
+* climate,
+* consumer spending cycles,
+* and retail seasonality.
+
+## Recommendation
+
+* Align inventory and marketing budgets with seasonal demand patterns.
+* Increase advertising before historically strong sales periods.
+
+---
+
+# 8. Residual Analysis
+
+## Observation
+
+Residual analysis indicates:
+
+* several large prediction errors,
+* increasing variance at higher sales levels,
+* and outlier observations.
+
+## Business Insight
+
+The business experiences occasional extreme demand spikes and unpredictable sales periods.
+
+## Interpretation
+
+Large prediction deviations may result from:
+
+* festive demand surges,
+* large promotions,
+* bulk purchases,
+* or operational anomalies.
+
+## Recommendation
+
+* Investigate extreme sales periods separately.
+* Consider robust regression or segmented modeling approaches.
+* Build category-specific models in future iterations.
+
+---
+
+# 9. Multicollinearity Observation
+
+## Observation
+
+The regression model indicates possible multicollinearity among predictor variables.
+
+## Business Insight
+
+Some variables may contain overlapping information.
+
+## Interpretation
+
+Historical sales variables such as:
+
+* lag_sales_1,
+* rolling_sales_7,
+* and transaction-related variables
+
+may explain similar patterns in consumer demand.
+
+## Recommendation
+
+* Evaluate Variance Inflation Factor (VIF) in future iterations.
+* Remove or combine highly correlated variables if necessary.
+
+---
+
+# 10. Marketing Mix Modeling (MMM) Conclusions
+
+## Observation
+
+The regression model successfully estimates the contribution of multiple business drivers to sales performance.
+
+## Major Sales Drivers Identified
+
+1. Promotional activity
+2. Historical sales momentum
+3. Customer transaction volume
+4. Seasonal patterns
+
+## Business Conclusion
+
+Sales performance is strongly influenced by:
+
+* marketing activity,
+* consumer traffic,
+* and historical purchasing trends.
+
+## Strategic Implications
+
+The business should:
+
+* optimize promotion planning,
+* improve demand forecasting,
+* strengthen seasonal marketing,
+* and prioritize high-performing stores and product categories.
+
+---
+
+# 11. Overall Business Recommendations
+
+## Recommendation 1
+
+Increase targeted promotional spending for high-performing categories and stores.
+
+---
+
+## Recommendation 2
+
+Leverage historical sales trends for better demand forecasting and inventory planning.
+
+---
+
+## Recommendation 3
+
+Improve customer traffic generation through localized marketing campaigns.
+
+---
+
+## Recommendation 4
+
+Develop separate holiday strategies for:
+
+* high-demand holidays,
+* operational closure periods,
+* and low-demand events.
+
+---
+
+## Recommendation 5
+
+Incorporate additional external variables such as:
+
+* pricing,
+* competitor activity,
+* advertising spend,
+* and weather data
+
+to improve future model performance.
+
+---
+
+# 12. Final Conclusion
+
+The project successfully demonstrates an end-to-end analytics workflow involving:
+
+* SQL-based data transformation,
+* retail KPI engineering,
+* exploratory data analysis,
+* statistical modeling,
+* and marketing effectiveness analysis.
+
+The regression-based Marketing Mix Modeling approach provided meaningful business insights into:
+
+* promotional effectiveness,
+* demand drivers,
+* seasonality,
+* and consumer transaction behavior.
+
+The analysis supports data-driven decision-making for:
+
+* marketing optimization,
+* inventory planning,
+* and sales forecasting within an FMCG retail environment.

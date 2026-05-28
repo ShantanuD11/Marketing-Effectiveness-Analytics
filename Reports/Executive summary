@@ -1,0 +1,170 @@
+# Executive Summary
+
+# Project
+
+Marketing Effectiveness & Retail Sales Analytics for FMCG Business
+
+---
+
+# Project Objective
+
+The objective of this project was to develop an end-to-end analytics solution for understanding:
+
+* sales performance,
+* promotional effectiveness,
+* customer behavior,
+* seasonal demand,
+* and future sales forecasting
+
+within an FMCG retail environment.
+
+The project combines:
+
+* SQL-based data transformation,
+* Python analytics,
+* statistical modeling,
+* Marketing Mix Modeling (MMM),
+* and forecasting techniques
+
+to generate actionable business insights.
+
+---
+
+# Business Problem
+
+The FMCG business wanted to answer several key strategic questions:
+
+* Which factors drive sales performance?
+* Do promotions significantly improve revenue?
+* Which regions and product categories perform best?
+* How does seasonality affect demand?
+* Can future sales be forecasted accurately?
+* How can analytics improve marketing and inventory planning?
+
+---
+
+# Data & Analytical Workflow
+
+The project utilized multiple relational datasets including:
+
+* retail sales data,
+* store metadata,
+* transaction data,
+* holiday/event data,
+* and external economic indicators.
+
+The analytical workflow included:
+
+1. SQL-based data cleaning and transformation
+2. KPI engineering
+3. Exploratory Data Analysis (EDA)
+4. Statistical regression modeling
+5. Marketing Mix Modeling (MMM)
+6. Sales forecasting
+7. Business recommendation generation
+
+---
+
+# Key Analytical Findings
+
+## 1. Promotions Significantly Increase Sales
+
+Promotional activity emerged as one of the strongest drivers of sales growth.
+
+Products under promotion generated substantially higher average sales compared to non-promotional products.
+
+---
+
+## 2. Historical Sales Trends Strongly Influence Future Demand
+
+Rolling sales trends and historical demand patterns were highly predictive of future sales behavior.
+
+---
+
+## 3. Customer Transactions Positively Impact Revenue
+
+Stores with higher customer transaction volume generally demonstrated stronger sales performance.
+
+---
+
+## 4. Strong Seasonal and Holiday Effects Exist
+
+Sales patterns varied significantly across months, holidays, and event periods, indicating strong seasonality within the business.
+
+---
+
+## 5. Regional Performance Variation Exists
+
+Certain stores and cities consistently outperformed others, highlighting opportunities for regional optimization and localized business strategies.
+
+---
+
+# Modeling & Forecasting Results
+
+A regression-based Marketing Mix Modeling (MMM) framework was developed to estimate the contribution of:
+
+* promotions,
+* customer transactions,
+* seasonality,
+* holidays,
+* and historical sales trends
+
+towards overall sales performance.
+
+Additionally, ARIMA-based forecasting models were used to predict future sales demand and support business planning.
+
+---
+
+# Strategic Recommendations
+
+Based on the analysis, the following strategic recommendations were identified:
+
+* Optimize promotional campaign timing
+* Use forecasting for inventory planning
+* Increase marketing investment during seasonal peaks
+* Prioritize high-performing regions
+* Improve customer traffic generation
+* Expand analytics capabilities using additional business variables
+
+---
+
+# Business Value of the Project
+
+This project demonstrates how data analytics can support:
+
+* marketing effectiveness analysis,
+* sales optimization,
+* demand forecasting,
+* inventory planning,
+* and strategic business decision-making
+
+within an FMCG retail environment.
+
+---
+
+# Technical Skills Demonstrated
+
+The project successfully demonstrates:
+
+* SQL data transformation
+* relational database design
+* Python analytics
+* exploratory data analysis
+* regression modeling
+* Marketing Mix Modeling (MMM)
+* forecasting techniques
+* business storytelling
+* and dashboard-ready analytical workflows
+
+---
+
+# Final Conclusion
+
+The project provides a complete end-to-end analytics framework for FMCG retail sales analysis and marketing effectiveness evaluation.
+
+The results demonstrate that data-driven analytical solutions can significantly improve:
+
+* business visibility,
+* forecasting capability,
+* marketing optimization,
+* and strategic planning effectiveness.
